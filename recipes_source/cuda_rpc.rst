@@ -1,14 +1,26 @@
 Direct Device-to-Device Communication with TensorPipe CUDA RPC
+
+TensorPipe CUDA RPC로 구현하는 Device-to-Device 직접 통신
 ==============================================================
 
 .. note:: Direct device-to-device RPC (CUDA RPC) is introduced in PyTorch 1.8
     as a prototype feature. This API is subject to change.
+
+.. note:: Device-to-Device 직접 RPC (CUDA RPC)는 PyTorch 1.8에서 프로토타입 기능으로 도입되었습니다.
+    이 API는 향후 변경될 수 있습니다.
+
+.. hint:: 본 문서에서 ``direct device-to-device communication`` 은
+   CPU 메모리로의 수동 스테이징 없이 GPU↔GPU 간 통신을 뜻합니다.
 
 In this recipe, you will learn:
 
 - The high-level idea of CUDA RPC.
 - How to use CUDA RPC.
 
+이 글에서는 다음을 배울 수 있습니다:
+
+- CPU RPC의 개요
+- CUDA RPC의 사용방법
 
 Requirements
 ------------
